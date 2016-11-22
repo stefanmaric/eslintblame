@@ -29,6 +29,10 @@ Pipe eslint output to `eslintblame`
 eslint . | eslintblame
 ```
 
+## Notes
+
+`eslintblame` expects [eslint's default stylish format](http://eslint.org/docs/user-guide/formatters/#stylish).
+
 ## Contribute
 
 Just open a Pull Request
