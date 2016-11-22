@@ -21,6 +21,14 @@ fisher install stefanmaric/eslintblame
 curl -Lo ~/.config/fish/functions/eslintblame.fish --create-dirs git.io/eslintblame
 ```
 
+## Use
+
+Pipe eslint output to `eslintblame`
+
+```shell
+eslint . | eslintblame
+```
+
 ## Contribute
 
 Just open a Pull Request
