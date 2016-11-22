@@ -33,6 +33,10 @@ eslint . | eslintblame
 
 `eslintblame` expects [eslint's default stylish format](http://eslint.org/docs/user-guide/formatters/#stylish).
 
+## Bash
+
+Do you need `eslintblame` for Bash? Open a [new issue](https://github.com/stefanmaric/eslintblame/issues/new) and I will try to port it ASAP.
+
 ## Contribute
 
 Just open a Pull Request
