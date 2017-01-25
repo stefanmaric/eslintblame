@@ -29,6 +29,20 @@ Pipe eslint output to `eslintblame`
 eslint . | eslintblame
 ```
 
+### Using [standard cli](http://standardjs.com/)?
+
+Use [`snazzy`](https://www.npmjs.com/package/snazzy) to format output:
+
+```shell
+standard | snazzy | eslintblame
+```
+
+Or replace the command entirely:
+
+```shell
+snazzy | eslintblame
+```
+
 ## Notes
 
 `eslintblame` expects [eslint's default stylish format](http://eslint.org/docs/user-guide/formatters/#stylish).
@@ -44,4 +58,3 @@ Just open a Pull Request
 ## License
 
 MIT ♥ — See [LICENSE](./LICENSE)
-
