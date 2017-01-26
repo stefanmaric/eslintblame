@@ -1,13 +1,39 @@
 eslintblame
 ===========
 
-[Fish Shell](https://fishshell.com/) function to parse eslint output into git-blame to unveil the offenders.
+[Bash script](./bin/eslintblame), [Fish Shell function](./functions/eslintblame.fish), and [npm package](https://www.npmjs.com/package/eslintblame) to parse eslint output into git-blame to unveil the offenders.
 
 ![eslintblame](https://i.imgur.com/0l7QyeA.gif)
 
 ## Install
 
-### Recomended
+### Using npm
+
+```shell
+npm -g install eslintblame
+```
+
+Or on a project:
+
+```
+npm install --save-dev eslintblame
+```
+
+And use it in your scripts:
+
+```json
+{
+  "scripts": {
+    "blame": "eslint . | eslintblame"
+  }
+}
+```
+
+**NOTES**: won't work on windows (unless you're using [Bash on Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about)).
+
+### Using [Fish Shell](https://fishshell.com/)
+
+#### Recomended
 
 Use [fisherman](http://fisherman.sh/):
 
@@ -15,11 +41,15 @@ Use [fisherman](http://fisherman.sh/):
 fisher install stefanmaric/eslintblame
 ```
 
-### Manual
+#### Manual
 
 ```shell
 curl -Lo ~/.config/fish/functions/eslintblame.fish --create-dirs git.io/eslintblame
 ```
+
+### Shell script as binary file
+
+Download the [bash script](./bin/eslint), copy in somewhere available in your `$PATH` and give it execution permissions with `chmod`.
 
 ## Use
 
@@ -46,10 +76,6 @@ snazzy | eslintblame
 ## Notes
 
 `eslintblame` expects [eslint's default stylish format](http://eslint.org/docs/user-guide/formatters/#stylish).
-
-## Bash
-
-Do you need `eslintblame` for Bash? Open a [new issue](https://github.com/stefanmaric/eslintblame/issues/new) and I will try to port it ASAP.
 
 ## Contribute
 
