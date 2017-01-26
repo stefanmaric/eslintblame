@@ -1,0 +1,29 @@
+{
+  "author": "Stefan Maric <me@stefanmaric.com> (http://stefanmaric.com/)",
+  "bin": "bin/eslintblame",
+  "bugs": {
+    "url": "https://github.com/stefanmaric/eslintblame/issues"
+  },
+  "description": "Parse eslint output into git-blame to unveil the offenders",
+  "homepage": "https://github.com/stefanmaric/eslintblame#readme",
+  "keywords": [
+    "eslint",
+    "standard",
+    "snazzy",
+    "git",
+    "blame",
+    "fishshell",
+    "bash"
+  ],
+  "license": "MIT",
+  "main": "bin/eslintblame",
+  "name": "eslintblame",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanmaric/eslintblame.git"
+  },
+  "scripts": {
+    "test": "shellcheck --exclude=SC2001 bin/eslintblame"
+  },
+  "version": "1.0.0"
+}
