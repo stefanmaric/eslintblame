@@ -1,7 +1,7 @@
 function eslintblame --description 'Parse eslint output into git-blame to unveil the offenders'
     # Store eslint report from stdin, without the error/warning count
     # See: https://github.com/fish-shell/fish-shell/issues/206#issuecomment-255232968
-    cat 1>| head --line=-3 | read -z report
+    cat 1>| read -z report
     # Get list of files with errors
     set -l files (echo $report | grep $PWD)
     for file in $files
